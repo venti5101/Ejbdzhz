@@ -1,0 +1,204 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ background: #030013;
+ color: white;
+ font-family: "Poppins";
+}
+
+button {
+ font-family: "Poppins";
+ display: flex;
+ justify-items: center;
+ align-items: center;
+ border-radius: 40px;
+ border: none;
+ outline: none;
+ font-size: 16px;
+ opacity: 0.8;
+ transition: all .3s;
+ 
+}
+button:hover{
+opacity: 1; 
+}
+
+p {
+ opacity: 0.8;
+}
+
+header {
+ width: 100%;
+ display: flex;
+ padding: 4%;
+ justify-content: space-between;
+ align-items: center;
+ position: fixed;
+ z-index: 999;
+ 
+ ul {
+  display: flex;
+  gap: 18px;
+  list-style-type: none;
+  background: #6C6C6C54;
+  padding: 16px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+ }
+}
+
+.Logotipo {
+ width: 60px;
+ border-radius: 12px;
+}
+
+section {
+ width: 100%;
+ display:flex;
+ flex-direction: column;
+ padding: 4%;
+}
+
+.secao1 {
+ background-image: url(/saturn.jpg);
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+ 
+ h2 {
+ font-size: 13vw;
+ color: #878787;
+ mix-blend-mode: color-dodge;
+ }
+  
+}
+
+.conteudoPrincipal {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+h1 {
+ text-align: center;
+ font-size: 40px;
+ font-weight: 500;
+}
+
+.divBotao {
+ display: flex;
+ margin-top: 28px;
+}
+
+.botaoPrimario {
+ background-color: #EEEEEEE8;
+ display: flex;
+ gap: 12px;
+ padding: 6px 6px 6px 18px;
+ 
+ img {
+ width: 44px;
+ }
+}
+
+.botaoSecundario {
+ padding: 16px;
+ color: #FFFFFFDB;
+ background-color: #EEEEEE04
+}
+
+.tituloSecao {
+ font-size: 40px;
+ font-weight: 500;
+ z-index: 90;
+ opacity: .8;
+}
+
+.secao2 {
+ align-items: center;
+ background-image: url(/fundo.jpg);
+ position: relative;
+}
+
+.secao2:before {
+ content: "";
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(#000000F0, #E0DC6B45, #060606EB);
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.divCards {
+ display: flex;
+ flex-wrap: wrap;
+ z-index: 800;
+ img{
+  width: 30px;
+ }
+ margin-bottom: 20px;
+}
+.card {
+ width: 32%;
+ padding: 32px 20px;
+ gap: 8px;
+ font-size: 20px;
+ font-weight: 500;
+ margin: 20px 0px 4px;
+}
+
+.branco{
+ background-color: #FFFFFF15;
+ border-radius: 20px;
+}
+
+.divImagens{
+ display: flex;
+ flex-wrap: wrap;
+ margin: 32px 0px 100px;
+ gap: 8px .5%;
+ 
+ img{
+  width: 90px;
+  transition: all .3s;
+  filter: saturate(0);
+  &:hover{
+   filter: saturate(1);
+  }
+ }
+}
+
+a{
+ color: white;
+ opacity: 0.7;
+ text-decoration: none;
+ 
+ &:hover {
+  opacity: 1;
+  transition: all .3s;
+ }
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+@media(max-width: 600px) {
+ .card{
+  width: calc(50% - 8px);
+ }
+}
+
+@media(max-width: 600px) {
+ .divImagens{
+  width: calc(50% - 8px);
+ }
+}
