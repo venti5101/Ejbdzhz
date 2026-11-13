@@ -64,7 +64,7 @@ section {
 }
 
 .secao1 {
- background-image: url(/saturn.jpg);
+ background-image: url(saturn.jpg);
  background-size: cover;
  background-position: center;
  height: 100vh;
@@ -123,7 +123,7 @@ h1 {
 
 .secao2 {
  align-items: center;
- background-image: url(/fundo.jpg);
+ background-image: url(fundo.jpg);
  position: relative;
 }
 
